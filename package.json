@@ -1,0 +1,16 @@
+{
+  "name": "plain-white-tee-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A research and decision studio for giving the same white T-shirt a different meaning.",
+  "scripts": {
+    "dev": "vitepress dev docs --host 127.0.0.1",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --host 127.0.0.1",
+    "check": "npm run build && node scripts/check-site.mjs"
+  },
+  "engines": { "node": ">=22.16" },
+  "devDependencies": { "vitepress": "1.6.4", "vue": "3.5.45" },
+  "overrides": { "vitepress": { "vite": "6.4.5" } }
+}
